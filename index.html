@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Results – Pure Path Lab</title>
+<style>
+  :root{
+    --brand:#296d98; --brand-dark:#205a80; --page-bg:#f3f7fa;
+    --border:#dbe6ee; --ink:#12354a; --muted:#5f7a8c;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--page-bg);color:var(--ink);display:flex;min-height:100vh}
+  .sidebar{width:307px;flex-shrink:0;background:var(--brand);color:#fff;display:flex;flex-direction:column;padding:6px 10px 10px}
+  .org{display:flex;align-items:center;gap:10px;padding:2px 0 14px}
+  .logo{width:40px;height:40px;border-radius:10px;background:#fff;color:var(--brand);display:grid;place-items:center;font-size:20px}
+  .org b{display:block;font-size:16px}.org small{color:rgba(255,255,255,.7);font-size:14px}
+  .label{font-size:13px;font-weight:600;color:rgba(255,255,255,.65);padding:18px 8px 6px}
+  .sidebar nav a{display:flex;align-items:center;gap:12px;padding:9px 8px;border-radius:8px;color:#fff;text-decoration:none;font-size:16px;margin-bottom:2px}
+  .sidebar nav a:hover{background:var(--brand-dark)}
+  .sidebar nav a.active{background:rgba(255,255,255,.18);font-weight:600}
+  .ico{width:20px;text-align:center;opacity:.95}
+  .user{margin-top:auto;border-top:1px solid rgba(255,255,255,.15);padding-top:12px;display:flex;align-items:center;gap:10px}
+  .avatar{width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,.2);display:grid;place-items:center;font-size:15px}
+  .user b{display:block;font-size:15px}.user small{color:rgba(255,255,255,.7);font-size:13px}
+  main{flex:1;padding:0 30px}
+  .top{height:55px;display:flex;align-items:center;border-bottom:1px solid var(--border);margin:0 -30px;padding:0 24px;background:#fff;color:var(--brand)}
+  h1{font-size:30px;margin:38px 0 6px}
+  .sub{color:var(--muted);margin:0 0 28px}
+  .bar{display:flex;gap:14px;align-items:center;margin-bottom:22px}
+  .tabs{display:flex;border:1px solid var(--border);background:#fff;border-radius:10px;padding:3px}
+  .tabs span{padding:9px 14px;border-radius:8px;color:var(--muted);font-size:16px}
+  .tabs .on{background:var(--brand);color:#fff}
+  .field{background:#fff;border:1px solid var(--border);border-radius:10px;padding:10px 13px;font-size:16px;color:var(--muted)}
+  .field.search{width:320px}.field.sel{width:240px;color:var(--ink);display:flex;justify-content:space-between}
+  .card{background:#fff;border:1px solid var(--border);border-radius:12px;overflow:hidden}
+  .head{display:grid;grid-template-columns:180px 1fr 1fr;padding:14px 10px;border-bottom:1px solid var(--border);font-weight:600;background:#eaf2f7;color:var(--brand-dark)}
+  .empty{padding:50px 0;text-align:center;color:var(--muted)}
+</style>
+</head>
+<body>
+<aside class="sidebar">
+  <div class="org"><div class="logo">⚗</div><div><b>Pure Path Lab</b><small>Main lab</small></div></div>
+  <nav>
+    <div class="label" style="padding-top:4px">Lab</div>
+    <a href="#"><span class="ico">👤</span>Patients</a>
+    <a href="#"><span class="ico">🧾</span>Orders &amp; billing</a>
+    <a href="#"><span class="ico">💼</span>Day-end collections</a>
+    <a href="#"><span class="ico">🤝</span>B2B accounts</a>
+    <a href="#"><span class="ico">🏠</span>Home collection</a>
+    <a href="#"><span class="ico">🛣</span>My visits</a>
+    <a href="#"><span class="ico">🖊</span>Samples</a>
+    <a href="#" class="active"><span class="ico">⚗</span>Results</a>
+    <a href="#"><span class="ico">📄</span>Reports</a>
+    <div class="label">Setup</div>
+    <a href="#"><span class="ico">📖</span>Test catalog</a>
+    <a href="#"><span class="ico">₹</span>Price lists</a>
+    <a href="#"><span class="ico">🩺</span>Referring doctors</a>
+    <div class="label">Settings</div>
+    <a href="#"><span class="ico">🏢</span>Lab profile</a>
+    <a href="#"><span class="ico">👥</span>Users &amp; roles</a>
+    <a href="#"><span class="ico">🛡</span>Security</a>
+  </nav>
+  <div class="user"><div class="avatar">DV</div><div><b>Devang Vikram Singh</b><small>shakti9120@gmail.com</small></div></div>
+</aside>
+<main>
+  <div class="top">▢</div>
+  <h1>Results</h1>
+  <p class="sub">Enter, check and approve results. Oldest orders first.</p>
+  <div class="bar">
+    <div class="tabs"><span class="on">To enter (0)</span><span>Awaiting approval</span><span>Approved</span></div>
+    <div class="field search">Lab no., patient or ID</div>
+    <div class="field sel">All departments <span>⌄</span></div>
+  </div>
+  <div class="card">
+    <div class="head"><span>Lab no.</span><span>Patient</span><span>Tests</span></div>
+    <div class="empty">Nothing to enter. Tests appear here once their sample is received.</div>
+  </div>
+</main>
+</body>
+</html>
